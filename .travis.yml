@@ -4,4 +4,5 @@ rvm:
 before_script:
   - gem install awesome_bot
 script:
+  - python3 lint.py
   - awesome_bot README.md --white-list www.getsentry.com
