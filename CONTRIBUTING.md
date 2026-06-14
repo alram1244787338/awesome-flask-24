@@ -3,9 +3,10 @@
 Please ensure your pull request adheres to the following guidelines:
 
 - Make an individual pull request for each suggestion.
-- Use the following format: \[RESOURCE\]\(LINK\) - DESCRIPTION.
+- Use the following format: `[RESOURCE](LINK) - DESCRIPTION.`
 - Check your spelling and grammar.
 - Remove any trailing whitespace.
+- Make sure your link works before submitting.
 - Send a Pull Request with the reason why the library is awesome.
 
 # Quality Standard
@@ -22,5 +23,5 @@ To be on the list, project repositories should adhere to these quality standards
 
 For resources
 
-- Please do not add paid cources/resources (there are so many we should not include theme all here)
+- Please do not add paid courses/resources (there are so many we should not include them all here)
 - Posts should be in series and well structured. Please do not add single post.

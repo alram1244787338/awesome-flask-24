@@ -1,4 +1,6 @@
-# Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome Flask
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 > A curated list of awesome Flask resources and plugins
 
@@ -93,7 +95,7 @@
 
 ## Email
 
-- [Flask-Mail](https://github.com/mattupstate/flask-mail/) - Flask-Mail adds SMTP mail sending to your Flask applications
+- [Flask-Mail](https://github.com/pallets-eco/flask-mail) - Flask-Mail adds SMTP mail sending to your Flask applications
 
 ## i18n
 
@@ -156,11 +158,10 @@
 - [pytest-flask](https://github.com/pytest-dev/pytest-flask) - A set of pytest fixtures to test Flask applications
 - [Flask-MonitoringDashboard](https://github.com/flask-dashboard/Flask-MonitoringDashboard) - Automatically monitor the evolving performance of Flask/Python web services.
 - [nplusone](https://github.com/jmcarp/nplusone#flask-sqlalchemy) - Auto-detect n+1 queries with Flask and SQLAlchemy
-- [connexion](https://github.com/zalando/connexion) - Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support.
 
 ## Utils
 
-- [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow) Flask + marshmallow for beautiful APIs
+- [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow) - Flask + marshmallow for beautiful APIs
 - [flask-jsonrpc](https://github.com/cenobites/flask-jsonrpc) - A basic JSON-RPC implementation for your Flask-powered sites
 - [Flask-Bcrypt](https://github.com/maxcountryman/flask-bcrypt) - Flask-Bcrypt is a Flask extension that provides bcrypt hashing utilities for your application
 - [Mixer](https://github.com/klen/mixer) - Mixer is application to generate instances of Django or SQLAlchemy models
@@ -172,10 +173,10 @@
 - [Flask-graphql](https://github.com/graphql-python/flask-graphql) - Adds GraphQL support to your Flask application
 
 # Resources
+
 ## Tutorials
 
 - [How to build a news app that never goes down and costs you practically nothing](http://blog.apps.npr.org/2013/02/14/app-template-redux.html) (by NPR)
-- [Building websites in Python with Flask](http://maximebf.com/blog/2012/10/building-websites-in-python-with-flask/)
 - [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 - [Implementing a RESTful Web API with Python & Flask](http://blog.luisrei.com/articles/flaskrest.html)
 - [Discover Flask - Full Stack Web Development with Flask](https://github.com/realpython/discover-flask)
@@ -215,7 +216,7 @@
 - [zmusic-ng](https://git.zx2c4.com/zmusic-ng/) - ZX2C4 Music provides a web interface for playing and downloading music files using metadata.
 - [GuitarFan](https://github.com/lowrain/GuitarFan) - guitar tab
 - [June](https://github.com/pythoncn/june) - ~~python-china.org~~
-- [Zerqu](https://github.com/lepture/zerqu) - ZERQU is a content-focused API-based platform. eg: [Python-China](https://python-china.org)
+- [Zerqu](https://github.com/lepture/zerqu) - ZERQU is a content-focused API-based platform.
 - [motiky](https://github.com/notedit/motiky)
 - [missing](https://github.com/notedit/missing) - a list service called missing
 - [thenewsmeme.com](https://github.com/danjac/newsmeme)
@@ -227,7 +228,6 @@
 - [cleanblog](https://github.com/defshine/cleanblog) - a clean blog system based on flask and mongoengine
 - [Quokka CMS](https://github.com/rochacbruno/quokka) - CMS made with Flask and MongoDB
 - [chat](https://github.com/lzyy/chat) - a live chat built with python (flask + gevent + apscheduler) + redis
-- [chatapp](https://github.com/vinceprignano/chatapp) - Flask and Angular.js Chat Application using Socket.io
 - [Frozen-Flask](https://github.com/Frozen-Flask/Frozen-Flask) - Freezes a Flask application into a set of static files
 - [mcflyin](https://github.com/wrobstory/mcflyin) - A small timeseries transformation API built on Flask and Pandas
 - [Skylines](https://github.com/skylines-project/skylines) - Live tracking, flight database and competition framework
@@ -235,12 +235,12 @@
 - [timesketch](https://github.com/google/timesketch) - Collaborative forensics timeline analysis
 - [changes](https://github.com/dropbox/changes) - A dashboard for your code. A build system.
 - [security_monkey](https://github.com/Netflix/security_monkey) - monitors policy changes and alerts on insecure configurations in an AWS account.
-- [securedrop](https://github.com/freedomofpress/securedrop)- an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources.
+- [securedrop](https://github.com/freedomofpress/securedrop) - an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources.
 - [sync_engine](https://github.com/nylas/sync-engine) - IMAP/SMTP sync system with modern APIs
 - [cleansweep](https://github.com/AamAadmiParty/cleansweep) - Volunteer & Campaign Management System
 - [indico](https://github.com/indico/indico) - a general-purpose event management web-based solution. It includes a full-blown conference organization workflow as well as tools for meeting management and room booking. It provides as well integration with video-conferencing solutions.
 - [flaskbb](https://github.com/flaskbb/flaskbb) - A classic Forum Software in Python using Flask.
-- [PythonBuddy] (https://github.com/ethanchewy/PythonBuddy) - Online Python Editor With Live Syntax Checking and Execution
+- [PythonBuddy](https://github.com/ethanchewy/PythonBuddy) - Online Python Editor With Live Syntax Checking and Execution
 
 ## Boilerplate
 
@@ -248,5 +248,4 @@
 - [cookiecutter-flask](https://github.com/sloria/cookiecutter-flask)
 - [Flask-Foundation](https://github.com/JackStouffer/Flask-Foundation)
 - [flask-rest-template](https://github.com/alexandre/flask-rest-template)
-- [gae-init](https://gae-init.appspot.com) - Flask boilerplate running on Google App Engine
 - [Flask-AppBuilder](https://github.com/dpgaspar/Flask-AppBuilder) - Simple and rapid application builder framework, built on top of Flask. includes detailed security, auto form generation, google charts and much more

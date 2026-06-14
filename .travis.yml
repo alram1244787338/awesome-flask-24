@@ -1,7 +1,11 @@
 language: ruby
 rvm:
-  - 2.2
+  - 2.7
+
 before_script:
+  - npm install -g markdownlint-cli
   - gem install awesome_bot
+
 script:
-  - awesome_bot README.md --white-list www.getsentry.com
+  - markdownlint README.md
+  - awesome_bot README.md --white-list packtpub.com,udacity.com,sentry.io,getsentry.com,exploreflask.com,pycoder.net --allow-redirect
