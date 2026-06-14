@@ -156,11 +156,10 @@
 - [pytest-flask](https://github.com/pytest-dev/pytest-flask) - A set of pytest fixtures to test Flask applications
 - [Flask-MonitoringDashboard](https://github.com/flask-dashboard/Flask-MonitoringDashboard) - Automatically monitor the evolving performance of Flask/Python web services.
 - [nplusone](https://github.com/jmcarp/nplusone#flask-sqlalchemy) - Auto-detect n+1 queries with Flask and SQLAlchemy
-- [connexion](https://github.com/zalando/connexion) - Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support.
 
 ## Utils
 
-- [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow) Flask + marshmallow for beautiful APIs
+- [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow) - Flask integration with marshmallow for serialization/deserialization of SQLAlchemy models.
 - [flask-jsonrpc](https://github.com/cenobites/flask-jsonrpc) - A basic JSON-RPC implementation for your Flask-powered sites
 - [Flask-Bcrypt](https://github.com/maxcountryman/flask-bcrypt) - Flask-Bcrypt is a Flask extension that provides bcrypt hashing utilities for your application
 - [Mixer](https://github.com/klen/mixer) - Mixer is application to generate instances of Django or SQLAlchemy models
@@ -213,15 +212,15 @@
 ## Built with Flask
 
 - [zmusic-ng](https://git.zx2c4.com/zmusic-ng/) - ZX2C4 Music provides a web interface for playing and downloading music files using metadata.
-- [GuitarFan](https://github.com/lowrain/GuitarFan) - guitar tab
-- [June](https://github.com/pythoncn/june) - ~~python-china.org~~
+- [GuitarFan](https://github.com/lowrain/GuitarFan) - A guitar tablature viewer and editor built with Flask.
+- [June](https://github.com/pythoncn/june) - A community forum application built with Flask, formerly powering python-china.org.
 - [Zerqu](https://github.com/lepture/zerqu) - ZERQU is a content-focused API-based platform. eg: [Python-China](https://python-china.org)
-- [motiky](https://github.com/notedit/motiky)
-- [missing](https://github.com/notedit/missing) - a list service called missing
-- [thenewsmeme.com](https://github.com/danjac/newsmeme)
+- [motiky](https://github.com/notedit/motiky) - A lightweight blog engine built with Flask.
+- [missing](https://github.com/notedit/missing) - A missing persons listing service built with Flask.
+- [thenewsmeme.com](https://github.com/danjac/newsmeme) - A social news aggregation site built with Flask, similar to Reddit.
 - [overholt](https://github.com/mattupstate/overholt) - Example Flask application illustrating common practices
-- [pypress](https://github.com/laoqiu/pypress) - flask team blog
-- [thepast.me](https://github.com/laiwei/thepast)
+- [pypress](https://github.com/laoqiu/pypress) - A lightweight team blog platform built with Flask.
+- [thepast.me](https://github.com/laiwei/thepast) - A personal data aggregation and timeline service built with Flask.
 - [redispapa](https://github.com/no13bus/redispapa) - another redis monitor by using flask, angular, socket.io
 - [flaskblog](https://github.com/defshine/flaskblog) - a simple blog system based on flask
 - [cleanblog](https://github.com/defshine/cleanblog) - a clean blog system based on flask and mongoengine
@@ -235,18 +234,18 @@
 - [timesketch](https://github.com/google/timesketch) - Collaborative forensics timeline analysis
 - [changes](https://github.com/dropbox/changes) - A dashboard for your code. A build system.
 - [security_monkey](https://github.com/Netflix/security_monkey) - monitors policy changes and alerts on insecure configurations in an AWS account.
-- [securedrop](https://github.com/freedomofpress/securedrop)- an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources.
+- [securedrop](https://github.com/freedomofpress/securedrop) - An open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources.
 - [sync_engine](https://github.com/nylas/sync-engine) - IMAP/SMTP sync system with modern APIs
 - [cleansweep](https://github.com/AamAadmiParty/cleansweep) - Volunteer & Campaign Management System
 - [indico](https://github.com/indico/indico) - a general-purpose event management web-based solution. It includes a full-blown conference organization workflow as well as tools for meeting management and room booking. It provides as well integration with video-conferencing solutions.
 - [flaskbb](https://github.com/flaskbb/flaskbb) - A classic Forum Software in Python using Flask.
-- [PythonBuddy] (https://github.com/ethanchewy/PythonBuddy) - Online Python Editor With Live Syntax Checking and Execution
+- [PythonBuddy](https://github.com/ethanchewy/PythonBuddy) - Online Python editor with live syntax checking and execution, powered by Flask.
 
 ## Boilerplate
 
-- [fbone](https://github.com/imwilsonxu/fbone)
-- [cookiecutter-flask](https://github.com/sloria/cookiecutter-flask)
-- [Flask-Foundation](https://github.com/JackStouffer/Flask-Foundation)
-- [flask-rest-template](https://github.com/alexandre/flask-rest-template)
+- [fbone](https://github.com/imwilsonxu/fbone) - A Flask boilerplate project with best practices for project structure, user management, and testing.
+- [cookiecutter-flask](https://github.com/sloria/cookiecutter-flask) - A cookiecutter template for Flask projects with Bootstrap, SQLAlchemy, and testing setup included.
+- [Flask-Foundation](https://github.com/JackStouffer/Flask-Foundation) - A Flask boilerplate with production-ready configuration including caching, authentication, and testing.
+- [flask-rest-template](https://github.com/alexandre/flask-rest-template) - Starter template for building RESTful APIs with Flask.
 - [gae-init](https://gae-init.appspot.com) - Flask boilerplate running on Google App Engine
 - [Flask-AppBuilder](https://github.com/dpgaspar/Flask-AppBuilder) - Simple and rapid application builder framework, built on top of Flask. includes detailed security, auto form generation, google charts and much more
