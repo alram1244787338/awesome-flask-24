@@ -1,0 +1,40 @@
+# Lychee link-checker configuration
+# Docs: https://lychee.cli.rs/usage/config/
+
+# ── Accept these HTTP responses as "OK" ──────────────────────────────
+accept = [200, 206, 301, 302]
+
+# ── Timeouts & retries ───────────────────────────────────────────────
+timeout = 30
+max_retries = 2
+retry_wait_time = 3
+
+# ── Behaviour flags ──────────────────────────────────────────────────
+insecure = false
+skip_missing = false
+
+# ── Excluded URL patterns (regex, matched against full URL) ──────────
+#
+# Each exclusion below has a reason.  If the reason no longer applies,
+# remove the line — do NOT leave stale exclusions masking real failures.
+#
+exclude = [
+  # ── Rate-limited / bot-blocked commercial sites ────────────────
+  # These return 403 or CAPTCHA pages to CI runners, causing false
+  # positives even though the pages are fine for human readers.
+  '^https?://shop\.oreilly\.com/',
+  '^https?://www\.packtpub\.com/',
+  '^https?://www\.udacity\.com/',
+
+  # ── Legacy or defunct domains ──────────────────────────────────
+  # gae-init.appspot.com — Google App Engine legacy domain; the
+  # project may still exist but the appspot URL is unreliable.
+  '^https?://gae-init\.appspot\.com',
+]
+
+# ── Domains where we accept any response (fallback for one-offs) ─────
+# Use this sparingly.  Prefer an `exclude` regex with a comment instead,
+# so the reason is always visible next to the rule.
+#
+# (none currently — add entries here only when a domain consistently
+#  returns non-standard status codes for valid pages)

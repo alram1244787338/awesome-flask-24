@@ -1,7 +1,10 @@
+# CI has moved to GitHub Actions (see .github/workflows/links.yml).
+# This file is kept only for backwards compatibility with existing
+# Travis integrations and will be removed in a future cleanup.
 language: ruby
 rvm:
   - 2.2
 before_script:
   - gem install awesome_bot
 script:
-  - awesome_bot README.md --white-list www.getsentry.com
+  - awesome_bot README.md --white-list www.getsentry.com,shop.oreilly.com,www.packtpub.com,www.udacity.com,gae-init.appspot.com
