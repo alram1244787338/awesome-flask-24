@@ -160,7 +160,7 @@
 
 ## Utils
 
-- [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow) Flask + marshmallow for beautiful APIs
+- [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow) - Flask + marshmallow for beautiful APIs
 - [flask-jsonrpc](https://github.com/cenobites/flask-jsonrpc) - A basic JSON-RPC implementation for your Flask-powered sites
 - [Flask-Bcrypt](https://github.com/maxcountryman/flask-bcrypt) - Flask-Bcrypt is a Flask extension that provides bcrypt hashing utilities for your application
 - [Mixer](https://github.com/klen/mixer) - Mixer is application to generate instances of Django or SQLAlchemy models
@@ -174,7 +174,7 @@
 # Resources
 ## Tutorials
 
-- [How to build a news app that never goes down and costs you practically nothing](http://blog.apps.npr.org/2013/02/14/app-template-redux.html) (by NPR)
+- [How to build a news app that never goes down and costs you practically nothing](http://blog.apps.npr.org/2013/02/14/app-template-redux.html) - by NPR
 - [Building websites in Python with Flask](http://maximebf.com/blog/2012/10/building-websites-in-python-with-flask/)
 - [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 - [Implementing a RESTful Web API with Python & Flask](http://blog.luisrei.com/articles/flaskrest.html)
@@ -235,12 +235,12 @@
 - [timesketch](https://github.com/google/timesketch) - Collaborative forensics timeline analysis
 - [changes](https://github.com/dropbox/changes) - A dashboard for your code. A build system.
 - [security_monkey](https://github.com/Netflix/security_monkey) - monitors policy changes and alerts on insecure configurations in an AWS account.
-- [securedrop](https://github.com/freedomofpress/securedrop)- an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources.
+- [securedrop](https://github.com/freedomofpress/securedrop) - an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources.
 - [sync_engine](https://github.com/nylas/sync-engine) - IMAP/SMTP sync system with modern APIs
 - [cleansweep](https://github.com/AamAadmiParty/cleansweep) - Volunteer & Campaign Management System
 - [indico](https://github.com/indico/indico) - a general-purpose event management web-based solution. It includes a full-blown conference organization workflow as well as tools for meeting management and room booking. It provides as well integration with video-conferencing solutions.
 - [flaskbb](https://github.com/flaskbb/flaskbb) - A classic Forum Software in Python using Flask.
-- [PythonBuddy] (https://github.com/ethanchewy/PythonBuddy) - Online Python Editor With Live Syntax Checking and Execution
+- [PythonBuddy](https://github.com/ethanchewy/PythonBuddy) - Online Python Editor With Live Syntax Checking and Execution
 
 ## Boilerplate
 

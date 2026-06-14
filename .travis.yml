@@ -1,7 +1,14 @@
-language: ruby
-rvm:
-  - 2.2
+language: python
+python:
+  - "3.8"
 before_script:
   - gem install awesome_bot
 script:
-  - awesome_bot README.md --white-list www.getsentry.com
+  # 1) Deterministic, offline structural check (table-of-contents anchors and
+  #    Markdown link/entry formatting). This is the reliable gate: a failure here
+  #    means README.md is genuinely malformed, not just a flaky network.
+  - python scripts/check_readme.py
+  # 2) Dead-link check over the network. Tolerate redirects and duplicate links
+  #    to cut false positives. Keep any --white-list additions narrow and only for
+  #    hosts that are actually present in README.md and block automated checkers.
+  - awesome_bot README.md --allow-redirect --allow-dupe
