@@ -1,0 +1,42 @@
+# lychee configuration for the Awesome Flask link checker.
+#
+# Design goal (see CONTRIBUTING.md "Handling broken or stale resources"):
+# reliably tell GENUINELY DEAD links (which must be fixed or removed) apart
+# from TRANSIENT failures and a small set of live-but-bot-hostile sites.
+# The old awesome_bot setup could not, which is why CI used to flip between
+# "all green" and "all red" depending on the day.
+
+# -- Transient-failure handling ----------------------------------------------
+# Rate limits (HTTP 429), timeouts and flaky DNS are retried with backoff
+# before a link is ever declared dead. This is the main fix for CI flakiness.
+max_retries = 3
+retry_wait_time = 2   # seconds, increases with each retry
+timeout = 20          # seconds per request
+max_concurrency = 8   # check in parallel, but stay polite
+
+# Some servers reject HEAD or the default checker User-Agent; use GET with a
+# browser-like UA so we don't get false 403/405s from otherwise-live sites.
+method = "get"
+user_agent = "Mozilla/5.0 (compatible; lychee; +https://github.com/lycheeverse/lychee)"
+
+# NOTE: we deliberately do NOT add 403/429 to an accept-list. Doing so would
+# silence genuinely broken links too. Transient 429s are handled by the retries
+# above; the rare site that *permanently* blocks automated checks while being
+# live in a browser is listed -- narrowly, with a reason -- in `exclude` below.
+
+# -- Exclude list (the only "whitelist") -------------------------------------
+# RULES (enforced in review):
+#   1. Every entry needs a one-line reason and a verification date.
+#   2. Scope each entry as tightly as possible (a single host, never a broad
+#      wildcard). Excluding a host hides ALL of its links, so keep it minimal.
+#   3. Only for sites confirmed LIVE in a browser but hostile to checkers.
+#      A genuinely dead link must be fixed/removed, never excluded.
+exclude = [
+  # udacity.com -- the entire domain refuses non-browser TLS connections.
+  # Verified 2026-06-14: even https://www.udacity.com/ returns a connection
+  # reset to both curl and lychee, so we get zero signal on individual pages.
+  # The two linked courses are free and load in a normal browser, so this is a
+  # false positive, not a dead link. Scope: this host only. If the courses are
+  # ever actually retired, delete them from README rather than widening this.
+  "https?://(www\\.)?udacity\\.com/",
+]
